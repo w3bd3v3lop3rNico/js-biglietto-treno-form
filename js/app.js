@@ -1,15 +1,18 @@
 // - Chiedere nome e cognome dell'utente
 //     - dichiarare una variabile
 //     - assegnare alla variabile il valore restituito dall'input text
+let userDOMNominative = document.querySelector("#nominative")
 
+console.log(userDOMNominative)
+console.log(typeof userDOMNominative)
 // - Chiedere numero di chilometri che vuole percorrere 
 //     - dichiarare una variabile
 //     - assegnare alla variabile il valore restituito dall'input text
-let userDOMKilometers = parseInt(document.getElementById("kilometers"))
+let userDOMKilometers = parseInt(document.getElementById("kilometers"));
 
-console.log(userDOMKilometers)
-console.log(typeof userDOMKilometers)
-console.dir(userDOMKilometers)
+console.log(userDOMKilometers);
+console.log(typeof userDOMKilometers);
+console.dir(userDOMKilometers);
 // - Chiedere il tipo di sconto in base all'età
 //     - dichiarare una variabile
 //     - assegnare alla variabile il valore restituito dal select
