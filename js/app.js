@@ -18,11 +18,14 @@ console.log(typeof userDOMKilometers);
 console.dir(userDOMKilometers);
 // - Calcolare il prezzo totale del viaggio
 //     - Calcolare il prezzo standard in base ai chilomerti
-
+let standardPrice = (PRICE_POR_KM * userDOMKilometers);
+console.log(standardPrice);
 
 // - Chiedere il tipo di sconto in base all'età
 //     - dichiarare una variabile
 //     - assegnare alla variabile il valore restituito dal select
-let userDOMDiscount = document.getElementById("discount")
+let userDOMDiscount = document.getElementById("discount");
 console.log(userDOMDiscount);
+
+// - Creare il bottone che ascolti
 // - Calalcolare il prezzo finale eventualmente scontato
