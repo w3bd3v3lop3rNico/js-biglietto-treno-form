@@ -1,0 +1,7 @@
+.user-input-card {
+    background-color: red;
+}
+
+.log-buttons > * {
+    text-transform: uppercase;
+}

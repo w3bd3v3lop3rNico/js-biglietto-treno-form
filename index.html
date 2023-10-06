@@ -13,32 +13,48 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-    </div>
+    
     <div class="container">
-        <div>
-            <p>nome e cognome</p>
-            <input type="text" id="nominative">
+        <div class="row text-center text-uppercase">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
         </div>
-        <div>
-            <p>chilometri</p>
-            <input type="text" id="kilometers">
+        <div class="row text-center text-uppercase">
+            <div class="col">
+                <div class="card user-input-card text-light">
+                    <div class="card-body ">
+                        <form class="d-flex justify-content-center gap-3 mb-3">
+                            <div>
+                                <p>nome e cognome</p>
+                                <input type="text" id="nominative">
+                            </div>
+        
+                            <div>
+                                <p>chilometri</p>
+                                <input type="text" id="kilometers" name="km">
+                            </div>
+                            <div>
+                                <p>fascia d'età</p>
+                                <select name="discount" id="discount">
+                                    <option value="0">Minorenne</option>
+                                    <option value="1">Maggiorenne</option>
+                                    <option value="2">Over 65</option>
+                                </select>
+                            </div>
+                        </form>
+                        
+                        <div class="log-buttons">
+                            <button id="btn-calc" class="btn btn-light" data-bs-toggle="button">Genera</button>
+                            <button class="btn btn-light" data-bs-toggle="button">Annulla</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <select name="discount" id="discount">
-                <option value="0">Minorenne</option>
-                <option value="1">Maggiorenne</option>
-                <option value="2">Over 65</option>
-            </select>
-        </div>
-        <div>
-            <button id="btn-calc">Genera</button>
-            <button>Annulla</button>
-        </div>
-        <div id="price">
-            
-            
+        
+        
+        <div >
+            il prezzo del biglietto è <span id="price"></span>
         </div>
         
     </div>
