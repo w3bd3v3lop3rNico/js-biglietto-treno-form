@@ -38,10 +38,11 @@ btnDOMElement.addEventListener('click', function () {
 
     // - Calalcolare il prezzo finale eventualmente scontato
     let discount
-    console.log("sconto " + discount)
+    
     // Controllo che i km siano un numero corretto
     if (isNaN(userDOMKilometers) || userDOMKilometers < 0) {
         alert("i dati non sono validi");
+
         console.log("i dati non sono validi");
     } else { // Se i dati dei km sono corretti
 
@@ -54,17 +55,22 @@ btnDOMElement.addEventListener('click', function () {
         } else {
             discount = 0
         }
-        
+        console.log("sconto " + discount)
     }
 
-    let finalPrice = standardPrice - discount
-    console.log("prezzo finale " + finalPrice)
-    console.log(typeof finalPrice)
+    let finalPrice = standardPrice - discount;
+    console.log("prezzo finale " + finalPrice);
+    console.log(typeof finalPrice);
     
 
     // Aggiorno il dom con il prezzo finale
     let prezzoDOMElement = document.getElementById('price')
-    prezzoDOMElement.innerHTML = "<p>" + finalPrice.toFixed(2) + " &euro;</p>" ;
+    prezzoDOMElement.innerHTML = "<p>" + finalPrice.toFixed(2) + " &euro;</p>";
+    if (isNaN(userDOMKilometers)) {
+        prezzoDOMElement.innerHTML = "<p>" + "error" + "</p>"
+    } else { 
+    }
+    
 })
 
 
