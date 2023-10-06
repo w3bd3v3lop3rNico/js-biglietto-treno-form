@@ -12,9 +12,9 @@ btnDOMElement.addEventListener('click', function () {
 // - Recupero il nome e cognome dell'utente
     //     - dichiarare una variabile
     //     - assegnare alla variabile il valore restituito dall'input text
-    let userDOMNominative = document.querySelector("#nominative");
-    console.log(userDOMNominative);
-    console.log(typeof userDOMNominative);
+    let userDOMNominativeInput = document.querySelector("#nominative");
+    console.log(userDOMNominativeInput);
+    console.log(typeof userDOMNominativeInput);
 
     // - Recupero il numero di chilometri che vuole percorrere 
     //     - dichiarare una variabile
@@ -70,6 +70,9 @@ btnDOMElement.addEventListener('click', function () {
         prezzoDOMElement.innerHTML = "<p>" + "error" + "</p>"
     } else { 
     }
+
+    let userDOMNominativeResult = document.querySelector(".user-name")
+    userDOMNominativeResult.innerHTML = userDOMNominativeInput
     
 })
 
