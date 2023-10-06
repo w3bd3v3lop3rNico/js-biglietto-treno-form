@@ -45,7 +45,7 @@ btnDOMElement.addEventListener('click', function () {
     console.log(offerNameDOM)
 
     let wagonDOMNumber = document.querySelector("#wagon-nr")
-    let num = Math.floor(Math.random() * 100)
+    let wagonNum = Math.floor(Math.random() * 100)
 
     // Controllo che i km siano un numero corretto
     if (isNaN(userDOMKilometers) || userDOMKilometers < 0) {
@@ -59,7 +59,7 @@ btnDOMElement.addEventListener('click', function () {
         console.log("i dati non sono validi");
     } else { // Se i dati dei km sono corretti
 
-        wagonDOMNumber.innerHTML = num + ""
+        wagonDOMNumber.innerHTML = wagonNum + ""
 
         // Applico i vari sconti
         if (userDOMDiscount == 0) {
